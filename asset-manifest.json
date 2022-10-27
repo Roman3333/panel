@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/panel/static/css/main.faf073cf.css",
-    "main.js": "/panel/static/js/main.eb40eda5.js",
+    "main.css": "/panel/static/css/main.511be403.css",
+    "main.js": "/panel/static/js/main.b6b16110.js",
     "Basket.css": "/panel/static/css/Basket.343c962f.chunk.css",
     "Basket.js": "/panel/static/js/Basket.d305dc1d.chunk.js",
     "static/media/settings.svg": "/panel/static/media/settings.5f34416c13daeeb8ee88249b200d9df9.svg",
@@ -17,13 +17,13 @@
     "static/media/marker.svg": "/panel/static/media/marker.7703ccf1efdc3a29d340baa5b5d8ae0f.svg",
     "static/media/calendar.svg": "/panel/static/media/calendar.b438cff0dd507044c3994ce268576c9b.svg",
     "static/media/vidget.svg": "/panel/static/media/vidget.c9299d23c7ec2b0c14b0320a9324fc92.svg",
-    "main.faf073cf.css.map": "/panel/static/css/main.faf073cf.css.map",
-    "main.eb40eda5.js.map": "/panel/static/js/main.eb40eda5.js.map",
+    "main.511be403.css.map": "/panel/static/css/main.511be403.css.map",
+    "main.b6b16110.js.map": "/panel/static/js/main.b6b16110.js.map",
     "Basket.343c962f.chunk.css.map": "/panel/static/css/Basket.343c962f.chunk.css.map",
     "Basket.d305dc1d.chunk.js.map": "/panel/static/js/Basket.d305dc1d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.faf073cf.css",
-    "static/js/main.eb40eda5.js"
+    "static/css/main.511be403.css",
+    "static/js/main.b6b16110.js"
   ]
 }
