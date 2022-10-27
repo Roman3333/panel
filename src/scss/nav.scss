@@ -1,0 +1,99 @@
+.nav {
+  min-width: 300px;
+  margin-right: 32px;
+  padding-top: 25px;
+  max-width: 300px;
+  border-right: 2px solid #ebdcdc;
+  &__item.title {
+    font-weight: 700;
+    margin-bottom: 32px;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+    position: relative;
+    font-weight: 600;
+    cursor: pointer;
+
+    &.actives::after {
+      position: absolute;
+      content: '';
+      width: 3px;
+      height: 100%;
+      border-radius: 5px;
+      background-color: #4f27bf;
+      top: 0;
+      right: 0;
+    }
+    svg {
+      margin-right: 16px;
+    }
+  }
+
+  &__item.ul {
+    position: relative;
+    flex-wrap: wrap;
+    cursor: pointer;
+
+    &::after {
+      position: absolute;
+      transform: rotate(180deg);
+      content: url('../assets/img/polygon.png');
+      top: 8px;
+      right: 15px;
+    }
+  }
+
+  &__item-ul {
+    display: none;
+  }
+
+  &__item.ul.active:after {
+    transform: rotate(0);
+  }
+
+  &__item.ul.active .nav__item-ul {
+    display: block;
+  }
+
+  &__item-li {
+    display: flex;
+    align-items: center;
+    padding-left: 48px;
+    padding-top: 40px;
+    padding-right: 6px;
+    font-weight: 600;
+
+    svg {
+      width: 43px !important;
+      height: 32px !important;
+    }
+  }
+
+  &.active {
+    transform: translateX(0);
+    background-color: rgba(24, 29, 94, 1);
+    height: 100vh;
+    padding-left: 10px;
+    left: 0;
+    z-index: 10;
+
+    .nav__item {
+      color: #fff;
+    }
+
+    svg path {
+      fill: #fff;
+    }
+  }
+}
+
+.menu__close {
+  position: absolute;
+  top: 20px;
+  right: 15px;
+  z-index: 15;
+  cursor: pointer;
+}

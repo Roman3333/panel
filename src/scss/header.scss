@@ -1,0 +1,35 @@
+.header {
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  padding: 0 32px;
+  background-color: #4f27bf;
+  color: #fff;
+
+  &__logo {
+    width: 200px;
+    height: 50px;
+    margin-right: 10px;
+  }
+
+  &__login {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  &__svg {
+    margin-right: 16px;
+  }
+
+  &__firstname {
+    margin-right: 7px;
+  }
+
+  &__burger {
+    display: none;
+  }
+}

@@ -1,0 +1,43 @@
+.news {
+  padding-top: 32px;
+  overflow-y: scroll;
+  height: 100vh;
+  &__title {
+    margin-bottom: 16px;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 31px;
+  }
+
+  &__suptitle {
+    margin-bottom: 24px;
+  }
+
+  &__p {
+    margin-bottom: 20px;
+
+    a {
+      color: blue;
+    }
+  }
+}
+
+.news::-webkit-scrollbar {
+  width: 4px;
+  border-radius: 5px;
+}
+
+.news::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.news::-webkit-scrollbar-thumb {
+  background-color: #4f27bf;
+  border-radius: 20px;
+  border: 3px solid #4f27bf;
+}
+
+.news {
+  scrollbar-color: #4f27bf #4f27bf;
+  scrollbar-width: 4px;
+}
