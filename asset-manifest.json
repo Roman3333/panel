@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/panel/static/css/main.511be403.css",
-    "main.js": "/panel/static/js/main.5273d5e8.js",
+    "main.js": "/panel/static/js/main.4404eeba.js",
     "Basket.css": "/panel/static/css/Basket.343c962f.chunk.css",
     "Basket.js": "/panel/static/js/Basket.d305dc1d.chunk.js",
     "static/media/settings.svg": "/panel/static/media/settings.5f34416c13daeeb8ee88249b200d9df9.svg",
@@ -18,12 +18,12 @@
     "static/media/calendar.svg": "/panel/static/media/calendar.b438cff0dd507044c3994ce268576c9b.svg",
     "static/media/vidget.svg": "/panel/static/media/vidget.c9299d23c7ec2b0c14b0320a9324fc92.svg",
     "main.511be403.css.map": "/panel/static/css/main.511be403.css.map",
-    "main.5273d5e8.js.map": "/panel/static/js/main.5273d5e8.js.map",
+    "main.4404eeba.js.map": "/panel/static/js/main.4404eeba.js.map",
     "Basket.343c962f.chunk.css.map": "/panel/static/css/Basket.343c962f.chunk.css.map",
     "Basket.d305dc1d.chunk.js.map": "/panel/static/js/Basket.d305dc1d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.511be403.css",
-    "static/js/main.5273d5e8.js"
+    "static/js/main.4404eeba.js"
   ]
 }
