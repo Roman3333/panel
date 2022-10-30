@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { FC, useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
 
 //images
@@ -13,7 +13,13 @@ import { ReactComponent as User } from '../assets/img/user.svg';
 import { ReactComponent as Finance } from '../assets/img/finance.svg';
 import { ReactComponent as Exit } from '../assets/img/exit.svg';
 
-const Nav = ({ menuActive, setMenuActive }: any) => {
+//types
+interface NavProps {
+  menuActive: boolean;
+  setMenuActive: (menuActive: boolean) => void;
+}
+
+const Nav: FC<NavProps> = ({ menuActive, setMenuActive }) => {
   const url = window.location.href;
   const showSettings = () => {
     const menu = document.querySelector('.nav__item.ul');
@@ -32,14 +38,19 @@ const Nav = ({ menuActive, setMenuActive }: any) => {
       </div>
       <ul className="nav__items">
         <li className="nav__item title">Меню</li>
-        <Link to={`/`}>
-          <li className={url === 'http://localhost:3000/' ? 'nav__item actives' : 'nav__item'}>
+        <Link to={`/panel`}>
+          <li
+            className={
+              url === 'https://roman3333.github.io/panel' ? 'nav__item actives' : 'nav__item'
+            }>
             <Home /> Главная
           </li>
         </Link>
         <Link to={`/search`}>
           <li
-            className={url === 'http://localhost:3000/search' ? 'nav__item actives' : 'nav__item'}>
+            className={
+              url === 'https://roman3333.github.io/search' ? 'nav__item actives' : 'nav__item'
+            }>
             <Loop /> Поиск адресов
           </li>
         </Link>
@@ -57,7 +68,7 @@ const Nav = ({ menuActive, setMenuActive }: any) => {
         </li>
         <li className="nav__item ul active" onClick={showSettings}>
           <Settings /> Настройки
-          <ul className="nav__item-ul">
+          <ul className="nav__item-ul" onClick={(e) => e.stopPropagation()}>
             <li className="nav__item-li">
               <User /> Настройки профиля
             </li>

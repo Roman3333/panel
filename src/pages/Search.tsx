@@ -1,9 +1,15 @@
-import React from 'react';
+import React, { FC } from 'react';
 
 import Nav from '../components/Nav';
 import { SearchForm } from '../components/SearchForm';
 
-const Search = ({ menuActive, setMenuActive }: any) => {
+//types
+interface SearchProps {
+  menuActive: boolean;
+  setMenuActive: (menuActive: boolean) => void;
+}
+
+const Search: FC<SearchProps> = ({ menuActive, setMenuActive }) => {
   return (
     <section>
       <div className="container">

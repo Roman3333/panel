@@ -1,9 +1,15 @@
-import React from 'react';
+import React, { FC } from 'react';
 
 import Nav from '../components/Nav';
 import News from '../components/News';
 
-const Main = ({ menuActive, setMenuActive }: any) => {
+//types
+interface MainProps {
+  menuActive: boolean;
+  setMenuActive: (menuActive: boolean) => void;
+}
+
+const Main: FC<MainProps> = ({ menuActive, setMenuActive }) => {
   return (
     <section className="main">
       <div className="container">

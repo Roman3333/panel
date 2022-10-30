@@ -6,8 +6,6 @@ import 'react-dadata/dist/react-dadata.css';
 import { ReactComponent as LoopWhite } from '../assets/img/loop-white.svg';
 
 export const SearchForm = () => {
-  const clearInput = () => {};
-
   return (
     <div className="search">
       <div className="search__title">Поиск адресов</div>

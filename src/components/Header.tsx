@@ -1,5 +1,5 @@
 /* eslint-disable jsx-a11y/alt-text */
-import React from 'react';
+import React, { FC } from 'react';
 import { Link } from 'react-router-dom';
 
 //images
@@ -10,10 +10,10 @@ interface SetMenuActive {
   setMenuActive: (prev: any) => void;
 }
 
-export const Header = ({ setMenuActive }: SetMenuActive) => {
+export const Header: FC<SetMenuActive> = ({ setMenuActive }) => {
   return (
     <header className="header">
-      <Link to={'/'}>
+      <Link to={'/panel'}>
         <img className="header__logo" src={logo} />
       </Link>
       <div className="header__burger" onClick={() => setMenuActive((prev: any) => !prev)}>

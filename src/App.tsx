@@ -9,13 +9,16 @@ import './scss/main.scss';
 const Search = lazy(() => import(/* webpackChunkName: "Basket" */ './pages/Search'));
 
 function App() {
-  const [menuActive, setMenuActive] = useState(false);
+  const [menuActive, setMenuActive] = useState<boolean>(false);
 
   return (
     <main className="main">
       <Header setMenuActive={setMenuActive} />
       <Routes>
-        <Route path="/" element={<Main menuActive={menuActive} setMenuActive={setMenuActive} />} />
+        <Route
+          path="/panel"
+          element={<Main menuActive={menuActive} setMenuActive={setMenuActive} />}
+        />
         <Route
           path="/search"
           element={
